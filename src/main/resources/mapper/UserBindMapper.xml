@@ -3,7 +3,7 @@
 <mapper namespace="org.dominate.achp.mapper.UserBindMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="org.dominate.achp.entity.UserBind">
+    <resultMap id="BaseResultMap" type="cn.hoxinte.pay.entity.UserBind">
         <id column="id" property="id" />
         <result column="user_id" property="userId" />
         <result column="bind_type" property="bindType" />

@@ -3,7 +3,7 @@
 <mapper namespace="org.dominate.achp.mapper.UserRoleMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="org.dominate.achp.entity.UserRole">
+    <resultMap id="BaseResultMap" type="cn.hoxinte.pay.entity.UserRole">
         <id column="id" property="id" />
         <result column="parent_id" property="parentId" />
         <result column="platform_id" property="platformId" />

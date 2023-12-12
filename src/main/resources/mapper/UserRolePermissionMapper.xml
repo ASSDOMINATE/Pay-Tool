@@ -3,7 +3,7 @@
 <mapper namespace="org.dominate.achp.mapper.UserRolePermissionMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="org.dominate.achp.entity.UserRolePermission">
+    <resultMap id="BaseResultMap" type="cn.hoxinte.pay.entity.UserRolePermission">
         <id column="id" property="id" />
         <result column="role_id" property="roleId" />
         <result column="permission_id" property="permissionId" />

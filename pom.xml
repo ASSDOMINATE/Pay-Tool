@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.dominate</groupId>
-    <artifactId>ACHP</artifactId>
+    <groupId>cn.hoxinte</groupId>
+    <artifactId>pay-tool</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>ACHP</name>
-    <description>Ai Chat Helper platform</description>
+    <name>pay-tool</name>
+    <description>For Pay Api Tool</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -57,8 +57,8 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.hwja</groupId>
-            <artifactId>tools</artifactId>
+            <groupId>cn.hoxinte</groupId>
+            <artifactId>tool</artifactId>
             <version>1.0</version>
         </dependency>
 
@@ -86,12 +86,6 @@
             <artifactId>aliyun-java-sdk-sts</artifactId>
             <version>${alibaba.sts.version}</version>
         </dependency>
-        <!-- OSS -->
-        <dependency>
-            <groupId>com.aliyun.oss</groupId>
-            <artifactId>aliyun-sdk-oss</artifactId>
-            <version>${alibaba.oss.version}</version>
-        </dependency>
         <!-- fast json -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -105,25 +99,6 @@
             <groupId>com.github.wxpay</groupId>
             <artifactId>wxpay-sdk</artifactId>
             <version>${wxpay.version}</version>
-        </dependency>
-
-
-        <!-- openai -->
-        <dependency>
-            <groupId>com.theokanning.openai-gpt3-java</groupId>
-            <artifactId>api</artifactId>
-            <version>${openai.gpt.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.theokanning.openai-gpt3-java</groupId>
-            <artifactId>client</artifactId>
-            <version>${openai.gpt.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>converter-jackson</artifactId>
-            <version>${retrofit2.version}</version>
         </dependency>
 
         <!-- spring -->
@@ -166,7 +141,6 @@
             <artifactId>jtokkit</artifactId>
             <version>${jtokkit.version}</version>
         </dependency>
-
         <!-- Jwt Token -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
@@ -187,19 +161,6 @@
             <groupId>com.auth0</groupId>
             <artifactId>java-jwt</artifactId>
             <version>${auth.jwt.version}</version>
-        </dependency>
-
-        <!-- MySql -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <!-- Mybatis plus -->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>${baomidou.mybatis.version}</version>
         </dependency>
 
         <dependency>
@@ -225,7 +186,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>ACHP</finalName>
+        <finalName>pay-tool</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
